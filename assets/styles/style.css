@@ -1,0 +1,139 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+    grid-area: navbar;
+    text-align: center;
+    
+}
+.sidebar {
+    grid-area: sidebar;
+    background-color: rgb(143, 8, 8);
+    
+}
+.sidebar h4 {
+    color: #ffff;
+    margin-top: 10px;
+    font-family: 'roboto';
+    font-weight: 400;
+    text-align: center;
+}
+.link li {
+    padding: 10px
+}
+.link li a {
+    font-family: 'roboto';
+    font-size: 14px;
+    text-decoration: none;
+    color: #ffff;
+    font-weight: 300;
+    cursor: pointer;
+    text-align: left;
+}
+.link li a:hover {
+    color: black;
+    
+}
+
+.cards {
+    grid-area: cards;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    margin: 2%;
+    gap: 20px;
+    
+}
+.footer {
+    grid-area: footer
+}
+.navbar-text {
+    background-color: rgb(153, 9, 9);
+    font-family: 'roboto';
+    font-weight: 500;
+    color: #ffff;
+    padding: 15px;
+    font-size: 18px;
+}
+.grid-container {
+    display: grid;
+    grid-template-areas: 
+        'navbar navbar navbar navbar'
+        'sidebar cards cards cards'
+        'footer footer footer footer';    
+}
+ul, li {
+    list-style: none;
+}
+.slider {
+    display: inline-flex;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.slider li {
+    position: absolute;
+    opacity: 0;
+    transition: opacity .6s;
+}
+.slider li img {
+    margin-top: 30px;
+    width: 300px;
+    height: 200px;
+    object-fit: cover;
+}
+.slider li:first-child {
+    opacity: 1;
+}
+.slider li:target {
+    opacity: 1;
+}
+.cambio {
+    display: block;
+    text-align: center;
+    margin: 20px;
+}
+.cambio li {
+    display: inline-block;
+    text-align: center;
+}
+.cambio li a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 4px;
+    border-radius: 100%;
+    background-color: rgb(54, 51, 51);
+}
+.text-description {
+    font-family: 'roboto';
+    font-weight: 300;
+    font-size: 15px;
+}
+.card {
+    text-align: center;
+    border: 1px solid rgb(211, 201, 201);
+    border-radius: 2%;
+
+}
+.comprar {
+    margin: 15px;
+    padding: 1% 4% 1% 4%;
+    background-color: rgb(153, 9, 9);
+    color: #ffff;
+    border: none;
+    cursor: pointer;
+}
+.footer {
+    text-align: center;
+    background-color: rgb(143, 8, 8);
+}
+.footer h4 {
+    color: #ffff;
+    font-family: 'roboto';
+    font-weight: 300;
+    padding: 5px;
+}
